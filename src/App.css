@@ -341,21 +341,22 @@ grid-template-columns: 1fr 1fr;
 }
 
 .container{
-  padding: 90px;
-
+  width: 100%;
 }
 
 .service{
-  width: 100vh;
+  width: 100%;
   color: aliceblue;
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 4rem;
   
+  
 
 }
 
 .sub-title{
+  margin-top: 10px;
   text-align: center;
   font-size: 60px;
   padding-bottom: 70px;
@@ -912,7 +913,7 @@ section{
 }
 
 .last-text{
-  width: 100%;
+  width: 116%;
   text-align: center;
   padding: 25px 0;
   background: rgb(7, 85, 91);
