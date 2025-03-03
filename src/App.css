@@ -1000,58 +1000,294 @@ section{
 
 
 
-@media (max-width: 768px) {
-  #toggle-menu{
-    display: block;
-    
+/* Media Query for Tablets (width <= 1024px) */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 5%;
   }
 
-  .navbar{
-    display: none;
+  .home-info h1 {
+    font-size: 45px;
   }
 
-  .home{
-    flex-direction: column-reverse;
+  .home-info h2 {
+    font-size: 28px;
   }
 
-  .home-info{
-    margin-top: 50px;
-  }
-
-  .about{
+  .about {
     grid-template-columns: 1fr;
-    margin-left: 20px;
-    margin-right: 20px;
+    text-align: center;
+  }
+
+  .about-text p {
+    font-size: 18px;
+  }
+
+  .services-list {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .main-text h2{
-    padding-left: 0;
-  }
-
-  .container{
-    padding: 0;
-  }
-
-  .container1{
-    padding: 0;
+    padding-left: 60px;
   }
 
   .portfolio-content{
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 130px;
+  }
+}
+
+/* Media Query for Mobile (width <= 768px) */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    display: none;
   }
 
-  .contact-text h2{
-    font-size: 63px;
+  #toggle-menu {
+    display: block;
   }
 
-  .services-list{
+  /* Home Section */
+  .home {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .home-info h1 {
+    font-size: 35px;
+  }
+
+  .home-info h2 {
+    font-size: 24px;
+  }
+
+  .home-info p {
+    font-size: 16px;
+  }
+
+  .home-img {
+    margin: auto;
+  }
+
+  .home-img .img-box{
+    width: 50vw;
+    height: 50vw;
+  }
+
+  /* About Section */
+  .about {
     grid-template-columns: 1fr;
+    padding: 20px;
   }
+
+  /* Services Section */
+  .services-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* skill section */
 
   .skill-container1{
     grid-template-columns: 1fr;
   }
 
- 
+  .container1{
+    width: 80%;
+  }
+
+  /* project section */
+
+  .main-text h2{
+    padding: 0;
+  }
+
+  .portfolio-content{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Contact Section */
+  .contact {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .contact-text h2 {
+    font-size: 50px;
+  }
+
+  .contact-list li {
+    font-size: 16px;
+  }
+
+  .contact-form form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
 }
+
+/* Media Query for Small Mobile Screens (width <= 480px) */
+@media (max-width: 480px) {
+  .home-info h1 {
+    font-size: 30px;
+  }
+
+  .home-info h2 {
+    font-size: 22px;
+  }
+
+  .home-info p {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-text h2 {
+    font-size: 40px;
+  }
+}
+
+
+/* Media Query for Small Mobile Screens (width <= 500px) */
+@media (max-width: 576px) {
+  /* Navbar */
+  .navbar {
+    display: none;
+  }
+
+  #toggle-menu {
+    display: block;
+  }
+
+  /* Home Section */
+  .home {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .home-info h1 {
+    font-size: 28px;
+  }
+
+  .home-info h2 {
+    font-size: 20px;
+  }
+
+  .home-info p {
+    font-size: 14px;
+  }
+
+  .home-img {
+    margin: auto;
+  }
+
+  /* About Section */
+  .about {
+    grid-template-columns: 1fr;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 30px;
+  }
+
+  .about-text h4 {
+    font-size: 18px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+  }
+
+  /* Services Section */
+  .services-list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .services-list div {
+    padding: 20px;
+  }
+
+  /* Skills Section */
+  .skill-container1 {
+    grid-template-columns: 1fr;
+  }
+
+  .container1 {
+    padding: 10px;
+  }
+
+  /* Contact Section */
+  .contact {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .contact-text h2 {
+    font-size: 35px;
+  }
+
+  .contact-text h4 {
+    font-size: 16px;
+  }
+
+  .contact-text p {
+    font-size: 14px;
+  }
+
+  .contact-list li {
+    font-size: 14px;
+  }
+
+  .contact-form form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .contact-form .send {
+    font-size: 14px;
+    padding: 10px 40px;
+  }
+
+  /* Footer */
+  .last-text {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  /* Back to Top Button */
+  .top {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .top i {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+
