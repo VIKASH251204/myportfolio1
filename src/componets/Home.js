@@ -18,7 +18,7 @@ export default function Home() {
         React.js(basic).
       </p>
       <div className="btn-sci">
-        <a href="Vikashcv.pdf" download="CVdownload" className="btn">Download CV</a>
+        <a href="VikashresumeFinal.pdf" download="CVdownload" className="btn">Download CV</a>
         <div className="sci">
           <a href="https://github.com/VIKASH251204"><i className="fa-brands fa-github" /></a>
           <a href="https://www.linkedin.com/in/vikash-tailor-13a6b32b9"><i className="fa-brands fa-linkedin" /></a>
